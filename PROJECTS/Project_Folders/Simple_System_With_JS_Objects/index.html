@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Reservation Page</title>
+        <script src="book_system.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="Book-Addition">
+                <h1>Book management System</h1>
+                <label for="bookName">Book Name</label><br>
+                <input type="text" id="bookName"><br><br>
+                <label for="authorName">Author name</label><br>
+                <input type="text" id="authorName"><br><br>
+                <label for="bookDescription">Book description</label><br>
+                <textarea id="bookDescription" rows="4"></textarea><br><br>
+                <label for="pageNumber">No. of Pages</label><br>
+                <input type="number" id="pageNumber"><br><br>
+                <button onclick="addBook()">Add book</button>
+            </div>
+            <div id="book-management">
+                <h2>Books</h2>
+                <div id="books-list">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

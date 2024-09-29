@@ -1,0 +1,171 @@
+body{
+    padding: 0%;
+    margin:0%;
+    background-image: linear-gradient(5deg,#768891 1%,white);
+}
+#container{
+    max-width: 100%;
+    width:100%;
+    height: 100%;
+    margin:0%;
+    padding-left:0;
+}
+header{
+    background-image:linear-gradient(90deg,#4d9bbf 50%,white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid;
+    border-image: linear-gradient(90deg,#4d9bbf 50%,white) 1;
+}
+#contact_table{
+    padding-left:5%;
+}
+h1{
+    padding-left:3%;
+    text-decoration-line:underline;
+    font-size:40px;
+}
+
+h2{
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+    border-bottom:3px solid;
+    border-color:#4d9bbf;
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    padding: 5px;
+    font-size:30px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+h3{
+    font-size:20px;
+}
+#navigation{
+    width: 100%;
+    border-bottom:  3px solid;
+    border-bottom-color: #4d9bbf;
+    margin-top:1%;
+    max-height: 1%;
+}
+#navigation_table{
+    width: 100%;
+}
+#navigation_options{
+   width: 25%;
+   font-size:20px;
+   transition: 0.7s;
+   -webkit-transition: 0.7s;
+   -moz-transition: 0.7s;
+   -ms-transition: 0.7s;
+   -o-transition: 0.7s;
+}
+#navigation_options:hover{
+    cursor:pointer;
+    color: #4d9bbf;
+}
+#about_me{
+    justify-content: center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 3%;
+    text-align: center;
+}
+#about_me_table{
+    width: 100%;
+}
+#profile_photo{
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+#introduction_text{
+   text-align: justify;
+   padding-right: 3%;
+   vertical-align: top;
+   width:50%;
+}
+#skills_section{
+    justify-content: center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 3%;
+    text-align: center;
+}
+#skills_box{
+    display:flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right:20%;
+    width:60%;
+}
+#skill{
+    padding:10px;
+    margin-left:5%;
+    margin-right:10px;
+    border:1px solid;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(58,207,213,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(58,207,213,1);
+    box-shadow: 0px 0px 10px 2px rgba(58,207,213,1);
+}
+#projects{
+    justify-content: center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 3%;
+    text-align: center;
+    box-sizing: content-box;
+}
+#project{
+    text-align: justify;
+    box-sizing: content-box;
+}
+#project_description{
+    margin-left:50px;
+}
+#logos{
+    width:50px;
+    height: 50px;
+}
+#divide{
+    border-bottom: 0.5px solid;
+    border-color:grey;
+    margin-left:15%;
+    margin-right:15%;
+    justify-content: center;
+    width:70%;
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+#recommendations{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 3%;
+    margin-bottom: 50px;
+}
+#recommendation_box{
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+#recommendation{
+    border:1px solid;
+    border-radius: 5px;
+    padding:10px;
+    margin:50px;
+    text-align: left;
+    font-style: italic;
+    width: 20%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
