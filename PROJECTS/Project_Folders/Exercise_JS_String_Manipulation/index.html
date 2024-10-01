@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="speed_analysis.js"></script>
+    </head>
+    <body>
+        <h1>Speed Typing Analysis</h1>
+        <label for="inputText">Type the following text:</label>
+        <textarea id="inputText" cols="50" rows="5" readonly placeholder="Get ready to type"></textarea><br><br>
+
+        <label for="userInput">Your typing:</label>     
+        <textarea id="userInput" cols="50" rows="5" placeholder="Start typing"></textarea><br>
+        <button onclick="startTest()">Start test</button>
+        <button onclick="endTest()" id="btn">End Test</button>
+        <div id="output"></div>
+    </body>
+</html>
