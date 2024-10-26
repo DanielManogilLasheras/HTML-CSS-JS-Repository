@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function Persona(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.saludar = function () {
+          return `${this.nombre} ${this.apellido}`;
+        };
+      }
+      let persona1 = new Persona("Natalia", "Jimenez");
+      let persona2 = new Persona("Pedro", "Pacheco");
+      let persona3 = new Persona("Ana", "Obregon");
+
+      let saludo1 = persona1.saludar.bind(persona3);
+      let saludo2 = persona2.saludar;
+
+      console.log(persona1.saludar());
+      console.log(persona2.saludar());
+      console.log(persona1.saludar.call(persona3));
+      console.log(persona1.saludar.apply(persona2));
+      console.log(saludo1());
+      console.log(saludo2());
+    </script>
+  </body>
+</html>
