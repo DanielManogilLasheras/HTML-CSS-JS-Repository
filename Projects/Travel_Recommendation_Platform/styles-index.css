@@ -18,6 +18,7 @@ nav{
     padding-top: 10px;
     padding-bottom:10px;
     height:70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a{
     text-decoration:none;
@@ -31,9 +32,9 @@ nav ul li{
     align-content:center;
 }
 #nav-left{
+    float:left;
     caret-color: transparent;
     align-content: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:flex;
     font-size: 25px;
     font-style: italic;
@@ -64,12 +65,13 @@ nav ul li{
     margin-left:30px;
 }
 #nav-right{
+    width:400px;
+    float:right;
     min-height: max-content;
     align-content: center;
-    text-align: right;
 }
 #nav-right ul{
-    text-align: right;
+    float:right;
     background: white;
     padding:10px;
     border-radius:20px;
@@ -97,6 +99,8 @@ nav ul li{
     -o-border-radius:5px;
 }
 #nav-right input{
+    box-sizing: border-box;
+    width:max-content;
     border:none;
     font-size:15px;
     min-width: 250px;
@@ -122,7 +126,15 @@ nav ul li{
     cursor:pointer; 
 }
 #panel-right{
+    display: flexbox;
+}
+#panel-right-left-side{
+    float:left;
     padding-top:50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#panel-right-right-side{
+    float:right;
 }
 #big-letters{
     font-size:60px;
@@ -133,8 +145,10 @@ nav ul li{
 #description{
     width:300px;
     color:white;
+    font-size:18px;
     margin-bottom:50px;
     line-height: 1.2;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #book button{
     font-size: 18px;;
@@ -151,6 +165,7 @@ nav ul li{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border:none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 button{
     caret-color: transparent;

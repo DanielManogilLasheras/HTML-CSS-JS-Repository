@@ -18,6 +18,7 @@ nav{
     padding-top: 10px;
     padding-bottom:10px;
     height:70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a{
     text-decoration:none;
@@ -31,9 +32,9 @@ nav ul li{
     align-content:center;
 }
 #nav-left{
+    float:left;
     caret-color: transparent;
     align-content: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:flex;
     font-size: 25px;
     font-style: italic;
@@ -57,17 +58,14 @@ nav ul li{
     color:white;
     font-weight:bold;
 }
-
 #nav-center ul li{
     margin:10px;
     align-content: center;
     margin-left:30px;
 }
 #nav-right{
-    width:24.6%;
-    min-height: max-content;
-    align-content: center;
-    text-align: right;
+    float:right;
+    width:400px;
 }
 
 #home{
@@ -94,6 +92,7 @@ nav ul li{
     color:white;
     font-weight:bold;
     margin-bottom:50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #panel-content-right-top-description{
     width:70%;
@@ -105,6 +104,7 @@ nav ul li{
     padding-bottom:5px;
     padding-left: 5px;
     padding-right: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 .bolded{
@@ -155,12 +155,14 @@ nav ul li{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #employee-information{
     padding-top:50px;
     padding-left:10px;
     padding-right:20px;
     color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .name-employee{
     color:white;
@@ -188,6 +190,7 @@ nav ul li{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .line{
     margin-top:20px;

@@ -55,9 +55,35 @@
           <div id="panel-content-right-top-title">
             <p>CONTACT US</p>
           </div>
-          <div id="panel-content-right-top-description"></div>
+          <div id="panel-content-right-top-description">
+            <form id="contactForm">
+              <label for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+              /><br />
+              <label for="email">Email:</label><br />
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+              /><br />
+              <label for="message">Message:</label><br />
+              <textarea
+                name="message"
+                id="message"
+                rows="15"
+                maxlength="300"
+                placeholder="Write your message"
+              ></textarea
+              ><br />
+              <button id="btnSubmit" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+    <script src="travel_recommendation_contact_us_ops.js"></script>
   </body>
 </html>
