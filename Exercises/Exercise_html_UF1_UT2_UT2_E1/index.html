@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Un típico y complejo formulario</h2>
+    <div id="container">
+      <form>
+        <table>
+          <tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td>
+              <input type="text" id="nombre" />
+              <label for="nac">F.Nac: </label>
+              <input type="text" id="nac" />
+              <label for="dni">DNI: </label>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="apellidos">Apellidos: </label></td>
+            <td><input type="text" id="apellidos" /></td>
+          </tr>
+          <tr>
+            <td><label for="calle">Calle y número: </label></td>
+            <td><input type="text" id="calle" /></td>
+          </tr>
+          <tr>
+            <td><label for="postCode">Código Postal: </label></td>
+            <td>
+              <input type="text" id="postCode" />
+              <label for="telefono">Teléfono: </label>
+              <input type="text" id="telefono" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="opcion">Opción:</label></td>
+            <td>
+              <select name="Opciones" id="opcion">
+                <option value="op1">Opción 1</option>
+                <option value="op2">Opción 2</option>
+              </select>
+              Escoja una opción
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="comentPersonal">Comentarios Personales: </label>
+            </td>
+            <td>
+              <textarea rows="2" cols="60" id="comentPersonal"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Pulse aquí</b></td>
+            <td id="buttons">
+              <button type="submit">Enviar datos</button>
+              <button>Borrar datos</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
