@@ -30,7 +30,6 @@ function shuffleFunc(deck){
     return shuffleDeck;
 }
 function drawCard(deck){
-    let found=true;
     const shuffleDeck=deck;
         card=deck[Math.floor(Math.random() * (shuffleDeck.length))];
     return card;

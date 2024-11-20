@@ -1,0 +1,54 @@
+#board{
+    min-width: 100vw;
+    min-height: 100vh;
+    align-content: center;
+    height:100%;
+    width:100%;
+}
+#board .col{
+    border:1px solid white;
+}
+#row-top{
+    min-height: 40vh;
+    max-height:40vh;
+}
+#row-top #col-left{
+    text-align: center;
+}
+#row-top #col-right{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+#row-mid{
+    min-height: 20vh;
+}
+#row-bottom{
+    min-height: 40vh;
+}
+#row-bottom #col-left{
+    text-align: center;
+    overflow: hidden;
+}
+#player-hand{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#player-hand img{
+    max-height: 20vh;
+    max-width: 20vw;
+}   
+#col-left{
+    text-align: right;
+    align-content: center;
+}
+#col-mid{
+    text-align: center;
+    align-content: center;
+    max-width: 60vh;
+}
+#col-right{
+    text-align: left;
+    align-content: center;
+}

@@ -1,0 +1,28 @@
+
+body{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+#canvas{
+    overflow: hidden;
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+    background-image: url(resources/bggame.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#welcome{
+    align-items:center;
+}
+#welcome button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
