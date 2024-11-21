@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="grid.css" />
   </head>
@@ -31,34 +32,50 @@
       <div id="board" class="container text-center" style="display: none">
         <div id="row-top" class="row">
           <div id="col-left" class="col">
-            <p class="fs-2">BANCA</p>
+            <p class="fs-2">Banca</p>
           </div>
-          <div id="col-mid" class="col">cartas</div>
+          <div id="col-mid" class="col">
+            <div id="handler-hand"></div>
+          </div>
           <div id="col-right" class="col">
-            <div id="puntuacion-banca"></div>
+            <div id="Score">Score:</div>
+            <div id="handler-score">0</div>
           </div>
         </div>
         <div id="row-mid" class="row">
           <div id="col-left" class="col">
-            <button type="button" id="btnDraw" class="btn btn-success">
+            <button
+              type="button"
+              id="btnDraw"
+              style="display: none"
+              class="btn btn-success"
+            >
               Sacar carta
             </button>
           </div>
           <div id="col-mid" class="col">
-            <p>BLACKJACK</p>
+            <p id="middle">BLACKJACK</p>
           </div>
           <div id="col-right" class="col">
-            <button type="button" class="btn btn-success">Plantarse</button>
+            <button
+              type="button"
+              style="display: none"
+              class="btn btn-success"
+              id="btnStand"
+            >
+              Plantarse
+            </button>
           </div>
         </div>
         <div id="row-bottom" class="row">
           <div id="col-left" class="col">
-            <p class="fs-2">{name}</p>
+            <p class="fs-2"></p>
           </div>
           <div id="col-mid" class="col">
             <div id="player-hand"></div>
           </div>
           <div id="col-right" class="col">
+            <div id="Score">Score:</div>
             <div id="player-score">0</div>
           </div>
         </div>

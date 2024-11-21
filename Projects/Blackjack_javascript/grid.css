@@ -1,3 +1,6 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 #board{
     min-width: 100vw;
     min-height: 100vh;
@@ -16,6 +19,11 @@
     text-align: center;
 }
 #row-top #col-right{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+#row-bottom #col-right{
     display:flex;
     justify-content:left;
     align-items: center;
@@ -39,6 +47,15 @@
     max-height: 20vh;
     max-width: 20vw;
 }   
+#handler-hand{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#handler-hand img{
+    max-height: 20vh;
+    max-width: 20vw;
+}
 #col-left{
     text-align: right;
     align-content: center;
@@ -51,4 +68,28 @@
 #col-right{
     text-align: left;
     align-content: center;
+}
+#middle{
+    align-content:center;
+    color:white;
+    font-style: italic;
+    font-weight: 400;
+}
+#col-left p{
+    color:white;
+    font-style: italic;
+    font-weight:bolder;
+
+}
+#player-score,#handler-score    {
+    font-size: 4vw;
+    color:white;
+
+}
+#score{
+    color:white;
+    font-style: italic;
+    font-weight:bolder;
+    font-size: 4vw;
+    
 }
