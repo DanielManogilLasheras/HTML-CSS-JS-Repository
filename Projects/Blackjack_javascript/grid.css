@@ -1,5 +1,6 @@
 *{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
 }
 #board{
     min-width: 100vw;
@@ -8,17 +9,18 @@
     height:100%;
     width:100%;
 }
-#board .col{
-    border:1px solid white;
-}
+
 #row-top{
     min-height: 40vh;
     max-height:40vh;
+    border-bottom:1px solid white;
 }
 #row-top #col-left{
-    text-align: center;
+    text-align: right;
+    border-right:1px solid white;
 }
 #row-top #col-right{
+    border-left:1px solid white;
     display:flex;
     justify-content:left;
     align-items: center;
@@ -27,16 +29,25 @@
     display:flex;
     justify-content:left;
     align-items: center;
+    border-left:1px solid white;
 }
 #row-mid{
     min-height: 20vh;
 }
 #row-bottom{
     min-height: 40vh;
+    border-top:1px solid white;
 }
 #row-bottom #col-left{
-    text-align: center;
+    text-align: right;
     overflow: hidden;
+    border-right:1px solid white;
+}
+#row-bottom #col-left p{
+    padding-right:1vw;
+}
+#row-top #col-left p{
+    padding-right:1vw;
 }
 #player-hand{
     display:flex;
@@ -74,6 +85,7 @@
     color:white;
     font-style: italic;
     font-weight: 400;
+    font-size: 3ex;
 }
 #col-left p{
     color:white;
