@@ -46,7 +46,7 @@
 #player-hand img{
     max-height: 20vh;
     max-width: 20vw;
-}   
+}
 #handler-hand{
     display:flex;
     flex-wrap: wrap;
@@ -91,5 +91,4 @@
     font-style: italic;
     font-weight:bolder;
     font-size: 4vw;
-    
 }
