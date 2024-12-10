@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            // Clase que define el comportamiento del contador
+            class MiContador extends HTMLElement {
+           
+                // El constructor se ejecuta cuando se crea el elemento
+                // Importante: el elemento aún no está en el DOM, por lo que no
+                // podemos hacer referencia a las funciones del DOM
+                // (aunque sí podremos usar el Shadow DOM, que veremos más adelante)
+                constructor() {
+                // Lo primero que hay que hacer es ejecutar 'super()' para
+                // llamar al constructor del prototipo HTMLElement
+                super();
+                // Inicializamos la propiedad 'cuenta'
+                this.cuenta = 0;
+                }
+           
+                // Función de cuenta
+                contar() {
+                this.cuenta++;
+                }
+           
+                // Esta función se ejecuta cuando se añade el elemento al DOM
+                // Por tanto, podremos hacer referencia a las funciones del DOM,
+                // como 'innerHTML', 'createElement', etcétera.
+                connectedCallback() {
+                    const shadow = this.attachShadow({mode : 'open'});
+                // Creamos un botón
+                let boton = document.createElement("button");
+                // que muestra el valor actual de 'cuenta'
+                boton.textContent = this.cuenta;
+                // Manejador de evento 'click'
+                // Función flecha: si se usara una función convencional, la función se ejecutaría
+                // sin contexto de objeto, por lo que 'this' apuntaría al objeto global
+                boton.addEventListener("click", () => {
+                    // Cada vez que se pulsa, se llama a la función 'contar'
+                    this.contar()
+                    // Se actualiza el valor del botón
+                    boton.textContent = this.cuenta;
+           
+                });
+                // Añadimos el botón al componente
+                shadow.append(boton);
+                }
+            }
+           
+            // Registro del componente personalizado
+            customElements.define('mi-contador', MiContador);
+           </script>
+           
+           
+           <!-- Creamos 3 contadores en el documento HTML -->
+           <mi-contador></mi-contador>
+           <mi-contador></mi-contador>
+           <mi-contador></mi-contador>
+    </body>
+</html>
