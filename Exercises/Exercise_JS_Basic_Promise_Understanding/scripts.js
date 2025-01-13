@@ -6,9 +6,11 @@
             let num = Math.random() * 10;
 
             if (num > 5){
+                La función resolve devuelve la variable num como resultado de la función
                 resolve(num);
             }
             else{
+                La función reject devuelve un string, pero podria devolver otra cosa
                 reject("Small number");
             }
         },5000);
@@ -20,7 +22,9 @@
         console.log("Error");
     })
 */
+//Hazme una operacion fetch
 fetch("https://dummyjson.com/products")
+    //
     .then((response)=>{
         return response.json();
     })
