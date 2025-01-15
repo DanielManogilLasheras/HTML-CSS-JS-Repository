@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            body{
+                display:flex;
+            }
+            #result{
+                width:50%;
+                max-width: 50%;
+            }
+        </style>
+    </head>
     <body>
         <div id="result">
-            <h1>List of Products</h1>
-            <loadingList>
-                
-            </loadingList>
-            <shoppingCart>
-
-            </shoppingCart>
+            <h1>List of Products:</h1>
+        </div>
+        <div id="shoppingList">
+            <h1>Shopping List</h1>
+            <ul id="list"></ul>
         </div>
         <script src="scripts.js"></script>
     </body>
