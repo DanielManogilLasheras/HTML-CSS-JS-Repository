@@ -1,0 +1,19 @@
+container{
+    max-width: 100%;
+}
+.navbar-toggler{
+    margin-bottom: 5px;
+}
+#navbarScroll{
+    justify-content: right;
+    padding-right: 20px;
+}
+.form-select{
+    margin-right:8px;
+}
+img{
+    max-height: 200px;
+}
+#products{
+    border-right: 1px solid grey;
+}
